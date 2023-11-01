@@ -1,0 +1,62 @@
+/* General styling for both mobile and desktop/tablet */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3498db; /* Blue for desktop/tablet */
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px; /* Increase font size for mobile */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px; /* Increase size for mobile */
+    border: 1px solid #ccc;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    body {
+        background-color: #ff5733; /* Orange for mobile */
+    }
+
+    form {
+        background-color: #00cc66; /* Green for mobile */
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    label {
+        text-align: left;
+    }
+}
